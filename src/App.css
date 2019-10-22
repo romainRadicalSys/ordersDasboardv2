@@ -3,20 +3,69 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #222;
+  height: 190px;
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.App-intro {
+  padding: 2em;
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.orders-mainTitle {
+  background-color: #2490e2;
+  margin-top: 0;
+  padding: 10px;
+  color: white;
+  display: flex;
+  font-weight: bold;
+}
+
+.orders-graphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.order-graphWrapper {
+  /* display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center; */
+  border: solid 0.5px grey;
+  width: 600px;
+  border-radius: 10px;
+  margin: 10px auto;
+  padding: 20px;
+
+}
+
+.react-tabs__tab {
+  font-size: 20px;
+}
+
+.react-tabs__tab--selected {
+  font-size: 25px;
+  font-weight: bold;
 }

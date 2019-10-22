@@ -49,10 +49,6 @@
 }
 
 .order-graphWrapper {
-  /* display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center; */
   border: solid 0.5px grey;
   width: 600px;
   border-radius: 10px;

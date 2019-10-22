@@ -14,7 +14,7 @@ import 'primeicons/primeicons.css';
 
 
 
-
+// Component to diplay Graphs Open/Closed order
 export class DoughnutChart extends Component {
 
   render() {
@@ -51,6 +51,8 @@ export class DoughnutChart extends Component {
   }
 }
 
+
+// Component to diplay table with orders data
 export class OrderTable extends Component {
   constructor() {
     super();
@@ -86,7 +88,9 @@ export class OrderTable extends Component {
   }
 }
 
-
+// Main Component used to display the User Dashboard components Tables and Graphs 
+// I've used Tab to separates the different sections
+// The library react-tabs is used to display the tabs sections
 const OrdersData = () => {
 
   const sOrders = Orders.orders.sOrders.data; //sOrders

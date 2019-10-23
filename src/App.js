@@ -3,7 +3,8 @@ import { InputText } from 'primereact/inputtext';
 import { Chart } from 'primereact/chart';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { TabView, TabPanel } from 'primereact/tabview';
+//import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Moment from 'react-moment';
 import 'react-tabs/style/react-tabs.css';
 import Orders from './mocks/orders.json';
@@ -123,28 +124,27 @@ const OrdersData = () => {
   return (
     <div className="wrapper">
       <h1 className="orders-mainTitle">Sales Orders Dashboard</h1>
-      <Tabs>
-        <TabList>
-          <Tab>sOrders</Tab>
-          <Tab>pOrders</Tab>
-          <Tab>Invoices</Tab>
-        </TabList>
-
-        <TabPanel>
+      <TabView>
+        <TabPanel header='sOrders'>
           <div className='contentWrapper'>
             <DoughnutChart data={dataGraphOrders.sOrders} />
             <OrderTable data={sOrders} responsive={true} />
           </div>
         </TabPanel>
-        <TabPanel>
-          <DoughnutChart data={dataGraphOrders.pOrders} />
-          <OrderTable data={pOrders} responsive={true} />
+        <TabPanel header='pOrders'>
+          <div className='contentWrapper'>
+            <DoughnutChart data={dataGraphOrders.pOrders} />
+            <OrderTable data={pOrders} responsive={true} />
+          </div>
         </TabPanel>
-        <TabPanel>
-          <DoughnutChart data={dataGraphOrders.invoices} />
-          <OrderTable data={invoice} responsive={true} />
+        <TabPanel header='Invoices'>
+          <div className='contentWrapper'>
+            <DoughnutChart data={dataGraphOrders.invoices} />
+            <OrderTable data={invoice} responsive={true} />
+          </div>
         </TabPanel>
-      </Tabs>
+      </TabView>
+
     </div>
   );
 };

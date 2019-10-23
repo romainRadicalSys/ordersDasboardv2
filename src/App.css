@@ -57,14 +57,10 @@
 
 }
 
-.react-tabs__tab {
+.p-tabview-title {
   font-size: 20px;
 }
 
-.react-tabs__tab--selected {
-  font-size: 25px;
-  font-weight: bold;
-}
 
 .contentWrapper {
   display: flex;

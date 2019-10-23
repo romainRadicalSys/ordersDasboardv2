@@ -138,11 +138,11 @@ const OrdersData = () => {
         </TabPanel>
         <TabPanel>
           <DoughnutChart data={dataGraphOrders.pOrders} />
-          <OrderTable data={pOrders} />
+          <OrderTable data={pOrders} responsive={true} />
         </TabPanel>
         <TabPanel>
           <DoughnutChart data={dataGraphOrders.invoices} />
-          <OrderTable data={invoice} />
+          <OrderTable data={invoice} responsive={true} />
         </TabPanel>
       </Tabs>
     </div>

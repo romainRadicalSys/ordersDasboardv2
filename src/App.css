@@ -71,3 +71,7 @@
   flex-direction: column;
 
 }
+
+.p-datatable-wrapper {
+  min-width: 800px;
+}

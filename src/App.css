@@ -50,7 +50,7 @@
 
 .order-graphWrapper {
   border: solid 0.5px grey;
-  width: 600px;
+  max-width: 600px;
   border-radius: 10px;
   margin: 10px auto;
   padding: 20px;
@@ -64,4 +64,10 @@
 .react-tabs__tab--selected {
   font-size: 25px;
   font-weight: bold;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+
 }

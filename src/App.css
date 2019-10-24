@@ -1,73 +1,77 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+	animation: App-logo-spin infinite 20s linear;
+	height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 190px;
-  padding: 20px;
-  color: white;
+	background-color: #222;
+	height: 190px;
+	padding: 20px;
+	color: white;
 }
 
 .App-intro {
-  padding: 2em;
-  font-size: large;
+	padding: 2em;
+	font-size: large;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
 
-  to {
-    transform: rotate(360deg);
-  }
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .orders-mainTitle {
-  background-color: #2490e2;
-  margin-top: 0;
-  padding: 10px;
-  color: white;
-  display: flex;
-  font-weight: bold;
+	background-color: #2490e2;
+	margin-top: 0;
+	padding: 10px;
+	color: white;
+	display: flex;
+	font-weight: bold;
 }
 
 .orders-graphs {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .order-graphWrapper {
-  border: solid 0.5px grey;
-  min-width: 600px;
-  border-radius: 10px;
-  margin: 10px auto;
-  padding: 20px;
+	border: solid 0.5px grey;
+	min-width: 600px;
+	border-radius: 10px;
+	margin: 10px auto;
+	padding: 20px;
+}
 
+@media all and (max-width: 600px) {
+	.order-graphWrapper {
+		max-width: 350px;
+		min-width: 100px;
+	}
 }
 
 .p-tabview-title {
-  font-size: 20px;
+	font-size: 20px;
 }
 
-
 .contentWrapper {
-  display: flex;
-  flex-direction: column;
-
+	display: flex;
+	flex-direction: column;
 }
 
 .p-datatable-wrapper {
-  min-width: 800px;
+	min-width: 800px;
 }

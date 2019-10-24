@@ -70,8 +70,10 @@
 .contentWrapper {
 	display: flex;
 	flex-direction: column;
+	min-width: 800px;
 }
 
-.p-datatable-wrapper {
+.p-datatable-wrapper,
+.p-datatable {
 	min-width: 800px;
 }
